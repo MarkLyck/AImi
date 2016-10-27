@@ -1,0 +1,52 @@
+@import "../../../styles/variables.css";
+
+.chat-view {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: $background-color;
+  .messages {
+    height: 100%;
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    z-index: 0;
+    box-sizing: border-box;
+
+  }
+  .message-form {
+    background: $message-color;
+    display: flex;
+    align-items: center;
+    .message-field {
+      height: 64px;
+      background: none;
+      border: none;
+      padding: 0 24px;
+      flex: 1;
+      font-size: 14px;
+    }
+    .send-btn {
+      background: $action-color;
+      border-radius: 50%;
+      border: none;
+      height: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 24px;
+      img {
+        height: 16px;
+        width: auto;
+        transform: rotate(-45deg);
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

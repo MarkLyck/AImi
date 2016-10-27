@@ -1,0 +1,14 @@
+@import "../../../styles/variables.css";
+
+.message {
+  background: $message-color;
+  padding: 16px;
+  align-self: flex-end;
+  margin-bottom: 16px;
+}
+
+.message.bot {
+  background: #fff;
+  border: 1px solid $border-color;
+  align-self: flex-start;
+}
