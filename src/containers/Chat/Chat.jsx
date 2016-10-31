@@ -8,6 +8,7 @@ class Chat extends React.Component {
     super(props)
 
     this.sendMessage = this.sendMessage.bind(this)
+    this.botRequest = this.botRequest.bind(this)
 
     this.state = {
       user: {
@@ -42,9 +43,33 @@ class Chat extends React.Component {
     this.refs.messageField.value = ''
 
     this.setState({ messages: messages })
+    this.botRequest(newMessage)
+  }
 
-    console.log(newMessage.body)
+  botRequest(message) {
+    var headers = new Headers({
+      "Content-Type": "application/json"
+    })
 
+    const options = {
+      method: 'POST',
+      headers: headers,
+      body: JSON.stringify(message),
+   }
+
+   fetch('http://127.0.0.1:3000/message', options)
+   .then((response) => {
+     response.text().then(result => {
+       let newMessages = this.state.messages
+       newMessages.push({
+         sender: 'bot',
+         body: result,
+         timeStamp: new Date()
+       })
+       this.setState({ messages: newMessages })
+       console.log(result)
+     })
+   })
   }
 
   render() {
