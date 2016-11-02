@@ -18,7 +18,7 @@
 
   }
   .message-form {
-    background: $message-color;
+    background: $bot-color;
     display: flex;
     align-items: center;
     .message-field {
@@ -30,7 +30,7 @@
       font-size: 14px;
     }
     .send-btn {
-      background: $action-color;
+      background: $message-color;
       border-radius: 50%;
       border: none;
       height: 40px;
