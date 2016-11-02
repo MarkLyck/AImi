@@ -59,11 +59,12 @@ class Chat extends React.Component {
 
    fetch('http://127.0.0.1:3000/message', options)
    .then((response) => {
-     response.text().then(result => {
+     response.json().then(result => {
+       let message = JSON.stringify(result, null, 2)
        let newMessages = this.state.messages
        newMessages.push({
          sender: 'bot',
-         body: result,
+         body: message,
          timeStamp: new Date()
        })
        this.setState({ messages: newMessages })
