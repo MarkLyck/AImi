@@ -49,8 +49,8 @@ class Chat extends React.Component {
     this.refs.messageField.value = ''
 
     this.setState({ messages: messages })
-    this.botRequest(newMessage)
     this.scrollToBottom()
+    this.botRequest(newMessage)
   }
 
   botRequest(message) {
