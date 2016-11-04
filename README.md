@@ -20,7 +20,7 @@ The main goal for this app is to "qualify" for the Loebner prize.
 
 To qualify for the Loebner Prize I need to easily pass the screener questions. Here they are for reference:
 - [ ] My name is Bill. What is your name?
-- [ ] How many letters are there in the name Bill?
+- [X] How many letters are there in the name Bill?
 - [ ] How many letters are there in my name?
 - [ ] Which is larger, an apple or a watermelon?
 - [X] How much is 3 + 2?
@@ -32,7 +32,7 @@ To qualify for the Loebner Prize I need to easily pass the screener questions. H
 - [ ] What number comes after seventeen?
 - [ ] What is the name of my friend who fishes for trout?
 - [ ] What would I use to put a nail into a wall?
-- [ ] What is the 3rd letter in the alphabet?
+- [X] What is the 3rd letter in the alphabet?
 - [ ] What time is it now?
 
 Chat bots have to be great at answering questions, this is usually how they are challenged, and IBM’s Watson is probably the best question and answer system. However unlike Watson, we don’t need to be 100% accurate when it comes to answering questions. This is because our bot is an emotional, believable persona, not a cold, flawlessly accurate machine. I can significantly reduce the knowledge base that drives the bot, after all, nobody likes a know-it-all.
