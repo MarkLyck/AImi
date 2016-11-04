@@ -1,0 +1,26 @@
+@import "../../../styles/variables.css";
+
+.navbar {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #FCFCFC;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+  h3 {
+    font-size: 1.5rem;
+  }
+  .profile-pic {
+    height: 48px;
+    width: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid $message-color;
+    margin: 0 16px;
+    box-sizing: border-box;
+  }
+}

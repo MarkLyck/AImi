@@ -19,22 +19,21 @@ The above is ideal information for generating fake accounts on social media, but
 The main goal for this app is to "qualify" for the Loebner prize.
 
 To qualify for the Loebner Prize I need to easily pass the screener questions. Here they are for reference:
-
-- My name is Bill. What is your name?
-- How many letters are there in the name Bill?
-- How many letters are there in my name?
-- Which is larger, an apple or a watermelon?
-- How much is 3 + 2?
-- How much is three plus two?
-- What is my name?
-- If John is taller than Mary, who is the shorter?
-- If it were 3:15 AM now, what time would it be in 60 minutes?
-- My friend John likes to fish for trout. What does John like to fish for?
-- What number comes after seventeen?
-- What is the name of my friend who fishes for trout?
-- What whould I use to put a nail into a wall?
-- What is the 3rd letter in the alphabet?
-- What time is it now?
+- [ ] My name is Bill. What is your name?
+- [ ] How many letters are there in the name Bill?
+- [ ] How many letters are there in my name?
+- [ ] Which is larger, an apple or a watermelon?
+- [X] How much is 3 + 2?
+- [X] How much is three plus two?
+- [ ] What is my name?
+- [ ] If John is taller than Mary, who is the shorter?
+- [ ] If it were 3:15 AM now, what time would it be in 60 minutes?
+- [ ] My friend John likes to fish for trout. What does John like to fish for?
+- [ ] What number comes after seventeen?
+- [ ] What is the name of my friend who fishes for trout?
+- [ ] What would I use to put a nail into a wall?
+- [ ] What is the 3rd letter in the alphabet?
+- [ ] What time is it now?
 
 Chat bots have to be great at answering questions, this is usually how they are challenged, and IBM’s Watson is probably the best question and answer system. However unlike Watson, we don’t need to be 100% accurate when it comes to answering questions. This is because our bot is an emotional, believable persona, not a cold, flawlessly accurate machine. I can significantly reduce the knowledge base that drives the bot, after all, nobody likes a know-it-all.
 
